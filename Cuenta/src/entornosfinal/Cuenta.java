@@ -23,14 +23,14 @@ public class Cuenta {
     }
 /**
  * 
- * @param nombre
- * @param apellidos
- * @param direccion
- * @param nif
- * @param telefono
- * @param edad
- * @param numeroCuenta
- * @param saldo
+ * @param nombre aqui ira el nombre del cliende
+ * @param apellidos aqui sus apellidos
+ * @param direccion aqui su direccion
+ * @param nif aqui su dni
+ * @param telefono aqui su telefono
+ * @param edad aqui su edad
+ * @param numeroCuenta aqui el numero de la cuenta 
+ * @param saldo y aqui el saldo dde las mismas 
  * Estas son las variables incluuuidas ya en el construntor ocn sus correspondientes parametro
  */
     //Constructor con parametros
@@ -58,7 +58,6 @@ public class Cuenta {
     }
 /**
  * Aqui declaramos los getters y settes correspondientes
- * @param s
  */
     //getters y setters
     public void setNombre(String s) {
@@ -139,7 +138,7 @@ public class Cuenta {
     }
     /**
      * Este metodo le usaremos para cada uno de los ingresos que el usuario realize en una de la cuentas
-     * @param n
+     * @param aqui n seria la variable utilizada para el metido de ingreso y a la que se le atribuye el dato
      * @return
      */
     //metodo ingreso
@@ -154,7 +153,8 @@ public class Cuenta {
     }
 /**
  * Este metodo le usaremos para cada una de las retiradas que el usuario realize en una de las cuentas
- * @param n
+  * @param aqui n seria la variable utilizada para el metido de retirada y a la que se le atribuye el dato
+
  * @return
  */
     //metodo retirar
