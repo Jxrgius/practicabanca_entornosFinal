@@ -1,8 +1,15 @@
 package entornosfinal;
 //Clase Cuenta nombre apellidos direccion nif telefono y edad
+/**
+ * 
+ * @author jorge
+ *
+ */
 public class Cuenta {
-
-    private String nombre;
+/**
+ * Aqui estamos declarando todas las constantes que incluyen la clase Cuenta
+ */
+	private String nombre;
     private String apellidos;
     private String direccion; 
     private int nif;
@@ -14,7 +21,18 @@ public class Cuenta {
     //Constructor por defecto
     public Cuenta() {
     }
-
+/**
+ * 
+ * @param nombre
+ * @param apellidos
+ * @param direccion
+ * @param nif
+ * @param telefono
+ * @param edad
+ * @param numeroCuenta
+ * @param saldo
+ * Estas son las variables incluuuidas ya en el construntor ocn sus correspondientes parametro
+ */
     //Constructor con parametros
     public Cuenta(String nombre, String apellidos, String direccion, int nif, int telefono, int edad, int numeroCuenta, double saldo) {
         this.nombre = nombre;
@@ -38,13 +56,16 @@ public class Cuenta {
         numeroCuenta = c.numeroCuenta;
         saldo = c.saldo;
     }
-
+/**
+ * Aqui declaramos los getters y settes correspondientes
+ * @param s
+ */
     //getters y setters
     public void setNombre(String s) {
         nombre = s;
     }
     
-    public void serApellidos (String s) {
+    public void setApellidos (String s) {
     	apellidos = s;
     }
     
@@ -106,13 +127,21 @@ public class Cuenta {
     }
     //fin getters y setters 
     
-    
+    /**
+     * Este es el metoro que utilizaremos para crear cada una de las cuentas
+     * @return
+     */
     //metodo para crear cuenta 
     public Cuenta crearCuenta(){
 		Cuenta primeraCuenta;
 		primeraCuenta = new Cuenta ("nombre", "apellidos", "direccion", 50365525, 680906267, 21, 13456789, 2580.95 );
     	return primeraCuenta;
     }
+    /**
+     * Este metodo le usaremos para cada uno de los ingresos que el usuario realize en una de la cuentas
+     * @param n
+     * @return
+     */
     //metodo ingreso
     public boolean ingreso(double n) {
         boolean ingresoCorrecto = true;
@@ -123,7 +152,11 @@ public class Cuenta {
         }
         return ingresoCorrecto;
     }
-
+/**
+ * Este metodo le usaremos para cada una de las retiradas que el usuario realize en una de las cuentas
+ * @param n
+ * @return
+ */
     //metodo retirar
     public boolean retirada(double n) {
         boolean retiradaCorrecta = true;

@@ -1,6 +1,9 @@
 package entornosfinal;
 
-
+/**
+ * En este documento tenemos los test a realizar para ver la correcta funcionalidad de los mismos 
+ * que se encuentran en Cuenta.java
+ */
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
